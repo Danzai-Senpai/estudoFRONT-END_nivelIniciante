@@ -1,1 +1,171 @@
-Contact Us Page
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store: Contact Us</title>
+    <link rel="shortcut icon" href="../image/fav_TS.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <header>
+        <h1>Tech Store</h1>
+        <nav>
+            <ul>
+
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+
+            </ul>
+        </nav>
+        <input type="search" placeholder="search...">
+    </header>
+    
+    <aside>
+        <h2>Shop by</h2>
+
+        <section>
+
+            <h3>Category</h3>
+            <hr>
+            <ul>
+                <li>All items</li>
+                <li>Cameras</li>
+                <li>Laptops</li>
+                <li>Phones</li>
+                <li>Accessories</li>
+                <li>Other</li>
+            </ul>
+
+        </section>
+
+        <section>
+
+            <h3>Price <span>($)</span></h3>
+
+            <hr>
+
+            <ul>
+                <li>1 - 9</li>
+                <li> 10 - 29</li>
+                <li>30 - 59</li>
+                <li>60 - 90</li>
+                <li>100 +</li>
+            </ul>
+
+        </section>
+
+    </aside>
+
+    <main>
+        <h2>Contact Us:</h2>
+
+        <!--<form>
+
+            <input type="number">
+            <input type="password">
+            <input type="date">
+            <input type="color">
+            <input type="range" min="1" max="10" value="10">
+
+        </form>-->
+
+        <form>
+
+            <div>
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            </div>
+
+            <div>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            </div>
+
+            <div>
+
+                <label for="comment">Comment: </label>
+                <textarea id="comment" name="comment" cols="30" rows="5" placeholder="Enter your problem" required></textarea>
+
+            </div>
+
+            <div>
+
+                <label for="subject">Subject:</label>
+                <select id="subject">
+
+                    <option value="nothing">---</option>
+
+                    <optgroup label="Product issues">
+                        <option value="returns">Returns</option>
+                        <option value="faulty_item">Faulty Item</option>
+                    </optgroup>
+
+                    <optgroup label="Delivery">
+                        <option value="delivery">Delivery info</option>
+                        <option value="order_tracking">Tracking my order</option>
+                    </optgroup>
+
+                    <optgroup label="Other">
+                        <option value="advice">Advice</option>
+                        <option value="other">Other</option>
+                    </optgroup>
+
+                </select>
+
+            </div>
+
+            <div>
+
+                <p>Subscribe futire offers by:</p>
+                <label for="newsletter">Newsletter</label>
+                <input type="checkbox"  id="newsletter" name="subscribe" value="newsletter">
+
+                <label for="email">E-mail</label>
+                <input type="checkbox" id="email" name="subscribe" value="email">
+
+                <label for="post">Post</label>
+                <input type="checkbox" id="post" name="subscribe" value="post">
+
+            </div>
+
+            <div>
+
+                <p>How would you like us to respond?</p>
+
+                <label for="phoneResponse">Phone</label>
+                <input type="radio" id="phoneResponse" name="response" value="phone">
+
+                <label for="emailResponse">E-mail</label>
+                <input type="radio" id="emailResponse" name="response" value="email">
+
+            </div>
+
+            <div>
+                <input type="submit">
+                <input type="reset">
+                <!--<button type="submit">Send</button>-->
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="Another_Pages/contactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>
