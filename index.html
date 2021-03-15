@@ -1,13 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech Store</title>
+    <title>Estrutura Base</title>
     <link rel="shortcut icon" href="image/fav_TS.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css pages/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!--Comment 1 : A tag div não significa nada em sí mas é utilizada para marcar divisões e agrupar elementos  sem  ser necessaria  a  utilização de um grupo semantico.-->
+
+    <!--Comment 2 : Existe uma hierarquia de de textos de h1 até h6.-->
+
+    <!--Comment 3 : Existe tags de formatação para  deixar o texto dentro desta seja negrito(<strong>), italico(<em>), marcado(<mark>), pequeno(<small>), riscado/deletado(<strike>), sublinhado/inserido(<ins>), sobrescrito(<sup>), subescrito(<sub>), codigo(<code>), citações(<blockquote>) e abreviações(<abbr>).-->
+    
+    <!--Comment 4 : Existem dois tipos de Listas sendo estas ordenadas e não ordenadas. As listas ordenadas são feitas com <ol> para determinar o tipo de lista e dentro dessa tag criamos outra tag que é <li> para cada componente dela. Quanto as listas não ordenadas-->
+    
+    <!--Comment 5 : A tag img é utilizada para adicionar imagens, no campo src se escreve a localização da imagem enquanto em alt é nome que representa a imagem para  facilitar a acessibilidade assim como nomear esta. Adicione Height e Width para determinar um tamanho.-->
+
+    <!--Comment 6 : Se desejamos tornar alguma palavra como uma forma de abrir outras paginas podemos ancorar links ou outras aginas  de seu projjeto através da tag a demarcando seu alvo em href. -->
+
+    <!--Comment 7 : Se desejamos linkar uma parte da tela para que quando clicarmos em algo formos levados de imediato até a localização desta damos ao local desejado o nome id="link" e aancoramos #link no campo onde clicaremos para ser levados a este campo especifico.-->
+
+    <!--Comment 8 : Se desejar adicionar um Favicon vá em head e utilize do link-favicon para utilizar um arquivo ..ico desejado como seu favicon.-->
+
+    <!--Comment 9 : Para criar tabelas utilize a tag table, use td para abrir seções da tabela e tr  para complementar estas seções. Dentro desta tag pode utilizar caption para focar em algo e o colspan faz você determinar se o texto toma conta de uma parte ou mais.-->
+
+    <!--Comment 10 : Para criar formularios utilize a tag form que possui o atributo action e method que são utilizados para definir onde será mandado a informação e qual metodo padrão será definido atendendo as expectativas. Dentro desta Tag teremos outras com suas funções. Label é a que representa os elementos html onde existira o atributo for para apontar a quê ela representa. Input já sabemos mass possui os atributos type para determinar que tipo de informação será inputada, id para dá uma identifficação a qual for em label vais e referir e placeholder que é aquela mensagem que aparece na text box enquato você não digita nada. Textarea é basicamente o mesmo do input mas a boxtext é maior. É indicado utilizar a tag name nos atributos de input para melhor organização do codigo.-->
+
+    <!--Comment 11 : A  tag input possui muitos atibutos. Começando com o type que podem ter seus tipos variados desde text, password, radio, URL, submit, checkbox, etc.-->
+
+    <!--Comment 12 : Existem dois types que merecem ser citados que são o radio e  o checkbox, o radio possibilita você criar alternativas que podem ser marcadas mas isso permite que o  usuario marque uma unica alternativa. Já o atributo checkbox permite que o uduario marque mais do que uma. Em ambos os exemplos o atributo value deve ser utilizado, value é a informação que será enviado pro servidor, pode ser usado 1, 2, f, m, masculino, feminino.-->
+
+    <!--Comment 13 : Agora iremos falar de uma nova tag que tem a mesma funcionalidade da tecla input mas como a paravra diz o usuario ira selecionar uma informação pré-determinada pelo programador. Diferente do input iremos adicionar essas opções pre-determinadas através da tag option e podemos relacionar essas opções em gruupos que são representados pela tag optiongroup, ambos tem a utilização semelhante a tag label.-->
+
+    <!--Comment 14 : Em CSS margin tem dois commandos no lado (0 auto) o primeiro representa topo e baixo enquanto o auto representa direita e esquerda.-->
+
+    <!--Comment 15 : Border pode ser utilizado agora no CSS primeiro coloque o pixel depois o tipo(solid) e a cor.-->
+
+    <!--Comment 16 : Existe o (overflow: hidden;) para cortar a imagem e encaixar ela no espaço de que você predeterminou com o border mas este não é ideal.-->
+
+    <!--Comment 17 : Para reduzir o tamanho da imagem sem utilizar o overflow: hidden fazendo a imagem ser reduzida sem ser cortada. Para isso abrimos um seletor de img para fazer uma declaração sendo esta width: 100%; fazendo o tamanho da imagem ser reduzido para ser encaixado na border determinada anteriormente.-->
+
+    <!--Comment 18 : Margin é basicamente a distancia da borda da box ou conteudo que vc determinou dos cantos ou outros produtos. Padding é quase a mesma coisa, o que muda é que é a distancia do conteudo dentro da box e as bordas destas.-->
+
+    <!--Comment 19 : Você pode importar Fonts do site Google Fonts utilizando-se do link para  monta-las. Utilize a tag font-family para importar esta para sua pagina de estilo css.-->
+
+    <!--Comment 20 : display: inline; é um comando no qual você junta dois blocos separados em um só sendo este chamado de bloco anonimo.-->
+
+    <!--Comment 21 : display: block; faz com que elementos html seja renderizado como bloco, tal como os paragrafos e os cabeçalhos são. Um bloco contem um espaço em branco tanto em cima como embaixo e não permite outros elementos html ao lado, exceto quando tiver sido declarado ao contrario.-->
+
+    <!--Comment 22 : display: inline-block é um comando que junta as funcionalidades de ambos os displays relacionados. A unica coisa que herda de block é que podemos deffinir a largura e a altura deste bloco.De inline ele herda algo muito importante que é que agora podemos deixar um elemento do lado outro, ou seja, mesma linha. Este ganha também o comportamento de uma palavra que é quando este excede a limitação determinada ele salta para a proxima linha.-->
+
+    <!--Comment 23 : A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, usada para calcular larguras (widths) e alturas (heights) dos elementos. content-box, esse é o estilo padrão, conforme especificado pela norma CSS. As propriedades width (largura) e height (altura) são medidas incluindo só o conteúdo, mas não o padding, border ou margin. No padding-box as propriedades de largura (width) e de altura (height) incluem o tamanho padding size, mas não incluem a propriedade border ou margem. Em border-box as propriedades de largura (width) e de altura (height) incluem o tamanho padding size e a propriedade border, mas não incluem a propriedade margin.-->
+
+    <!--Comment 24 : list-style é uma propriedade para determina o formato dado a li da sua ul ou ol.-->
+
+    <!--Comment 25 : O tema inherit de color faz a tomar a cor de fonte proeminente no seu div.-->
+
+    <!--Comment 26 : Uma pseudo-classe CSS é uma palavra-chave adicionada a seletores que especifica um estado especial do elemento selecionado. Por exemplo, :hover pode ser usado para alterar a cor de um botão quando o usuário passar o cursor sobre ele. first-of-type determina algo do primeiro tipo pré-determinado. last-of-type é semelhante.-->
+
+    <!--Comment 27 : A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo do seu containêr, onde textos e elementos em linha irão se posicionar ao seu redor. Um elemento flutuante é um tipo de elemento cujo valor de float é diferente de none.-->
+
+    <!--Comment 28 : A propriedade clear do CSS especifica se um elemento pode ter elementos flutuantes ao seu lado ou se devem ser movidos para abaixo dele (clear). Essa propriedade se aplica à elementos flutuantes ou não flutuantes.-->
 
     <header>
         <h1>Tech Store</h1>
@@ -53,70 +112,70 @@
     <main>
         <h2>All items:</h2>
 
-        <div>
+        <div class="product">
             <a href="Another_Pages/product-detail.html">
                 <img src="image/Tech/controller.jpg" alt="game controller picture">
             </a>
             <h4><a href="Another_Pages/product-detail.html">Game  Controller</a></h4>
             <p>$ 79,85</p>
             <p>Awesome Game Controller<br> for your Xbox!!!</p>
-            <a href="Another_Pages/product-detail.html">More Info</a>
-            <a href="">Add Cart</a>
+            <a href="Another_Pages/product-detail.html" class="button">More Info</a>
+            <a href="" class="button">Add Cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="">
                 <img src="image/Tech/headphones.jpg" alt="white headphones">
             </a>
             <h4><a href="">White Headphones</a></h4>
             <p>$ 54,95</p>
             <p>Awesome White<br> Headphones!!!</p>
-            <a href="">More Info</a>
-            <a href="">Add Cart</a>
+            <a href="" class="button">More Info</a>
+            <a href="" class="button">Add Cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="">
                 <img src="image/Tech/camera.jpg" alt="canon camera">
             </a>
             <h4>Canon Camera</h4>
             <p>$ 549,95</p>
             <p>Awesome Camera<br> by Canon!!!</p>
-            <a href="">More Info</a>
-            <a href="">Add Cart</a>
+            <a href="" class="button">More Info</a>
+            <a href="" class="button">Add Cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="">
                 <img src="image/Tech/microphone.jpg" alt="microphone">
             </a>
             <h4>Microphone</h4>
             <p>$ 119,95</p>
             <p>Awesome Blue<br> Yeti Microphone!!!</p>
-            <a href="">More Info</a>
-            <a href="">Add Cart</a>
+            <a href="" class="button">More Info</a>
+            <a href="" class="button">Add Cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="">
                 <img src="image/Tech/cables.jpg" alt="cables">
             </a>
             <h4>Cables</h4>
             <p>$ 10,95</p>
             <p>Awesome Cables available<br> in diferent lenghts!!!</p>
-            <a href="">More Info</a>
-            <a href="">Add Cart</a>
+            <a href="" class="button">More Info</a>
+            <a href="" class="button">Add Cart</a>
         </div>
 
-        <div>
+        <div class="product">
             <a href="">
                 <img src="image/Tech/lenses.jpg" alt="camera lenses">
             </a>
             <h4>Camera Lenses</h4>
             <p>$ 99,95</p>
             <p>Awesome Camera<br> Lenses!!!</p>
-            <a href="">More Info</a>
-            <a href="">Add Cart</a>
+            <a href="" class="button">More Info</a>
+            <a href="" class="button">Add Cart</a>
         </div>
 
     </main>
